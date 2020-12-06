@@ -1,0 +1,48 @@
+﻿<Window x:Class="KMiSOIB.prog1Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KMiSOIB"
+        mc:Ignorable="d"
+        Title="Task1Window" Height="459.034" Width="1308.999">
+   
+
+    <Grid Margin="0,0,2,0" Background="#FFFFC49A">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="MessageTB" HorizontalAlignment="Left" Height="25" Margin="643,112,0,0" TextWrapping="Wrap" Text="ЕРШОВА М" VerticalAlignment="Top" Width="115" Grid.Column="1" MaxLength="8"/>
+        <TextBox x:Name="KeyTB" HorizontalAlignment="Left" Height="24" Margin="642,143,0,0" TextWrapping="Wrap" Text="НИКОЛАЕВ" VerticalAlignment="Top" Width="115" Grid.Column="1" MaxLength="8" TextChanged="KeyTB_TextChanged"/>
+        <Button x:Name="Proceed_Button" Content="Начать" HorizontalAlignment="Left" Margin="659,176,0,0" VerticalAlignment="Top" Width="98" Click="Proceed_Button_Click" Grid.Column="1" Height="21"/>
+        <Label Content="Сообщение:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="543,109,0,0" Height="27" Width="100" Grid.Column="1"/>
+        <Label Content="Ключ:" HorizontalAlignment="Left" Margin="581,139,0,0" VerticalAlignment="Top" Grid.Column="1" Height="28" Width="54"/>
+        <Label Content="Двоичный вид сообщения:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="15,258,0,0" Grid.Column="1" Height="26" Width="162"/>
+        <TextBox x:Name="MessageBinaryTB" HorizontalAlignment="Left" Height="23" Margin="180,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Grid.Column="1" IsReadOnly="True"/>
+        <Label Content="Блок L:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="127,314,0,0" Grid.Column="1" Height="26" Width="48"/>
+        <TextBox x:Name="LBlockTB" HorizontalAlignment="Left" Height="23" Margin="180,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Grid.Column="1" IsReadOnly="True"/>
+        <Label Content="Блок R:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="127,342,0,0" Grid.Column="1" Height="26" Width="50"/>
+        <TextBox x:Name="RBlockTB" HorizontalAlignment="Left" Height="23" Margin="180,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Grid.Column="1" IsReadOnly="True"/>
+        <Label Content="Перестановка:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="86,286,0,0" Grid.Column="1" Height="26" Width="89"/>
+        <TextBox x:Name="SubstituteTB" HorizontalAlignment="Left" Height="23" Margin="180,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Grid.Column="1" IsReadOnly="True"/>
+        <Label Content="Блок R расширенный:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,374,0,0" Grid.Column="1" Height="26" Width="131"/>
+        <TextBox x:Name="ExtenderRTB" HorizontalAlignment="Left" Height="23" Margin="180,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Grid.Column="1" IsReadOnly="True"/>
+        <Label Content=" Сумма R с ключом по модулю 2:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="628,286,0,0" Grid.Column="1" Height="26" Width="197"/>
+        <TextBox x:Name="SumTB" HorizontalAlignment="Left" Height="23" Margin="830,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Grid.Column="1" IsReadOnly="True" TextChanged="SumTB_TextChanged"/>
+        <Label Content="S-преобразование:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="707,312,0,0" Grid.Column="1" Height="26" Width="118"/>
+        <TextBox x:Name="Substitute2TB" HorizontalAlignment="Left" Height="23" Margin="830,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Grid.Column="1" IsReadOnly="True" TextChanged="Substitute2TB_TextChanged"/>
+        <Label Content="Преобразованный ключ:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="675,259,0,0" Grid.Column="1" Height="26" Width="150"/>
+        <TextBox x:Name="KeyBinaryTB" HorizontalAlignment="Left" Height="23" Margin="830,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Grid.Column="1" IsReadOnly="True"/>
+        <Label Content="Р-преобразование + блок L:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="655,340,0,0" Grid.Column="1" Height="26" Width="170"/>
+        <TextBox x:Name="RBlock" HorizontalAlignment="Left" Height="23" Margin="830,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Grid.Column="1" IsReadOnly="True" TextChanged="Substitute2TB_TextChanged"/>
+        <Label Content="Конечная перестановка:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="675,374,0,0" Grid.Column="1" Height="26" Width="152"/>
+        <TextBox x:Name="ConcatAndSumTB" HorizontalAlignment="Left" Height="23" Margin="830,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" Grid.Column="1" IsReadOnly="True" TextChanged="ConcatAndSumTB_TextChanged"/>
+        <Label Content="Задача №1. Алгоритм шифрования DES" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="472,10,0,0" Height="44" Width="248" Grid.Column="1"/>
+        <Label Content="Входные данные" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="642,77,0,0" Height="27" Width="174" Grid.Column="1"/>
+        <Label Content="Выполнение" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="546,211,0,0" Height="27" Width="215" Grid.Column="1"/>
+        <Label Content="Для получения 64 бит исходного текста&#xD;&#xA;используйте 8 первых букв из своих данных: &#xD;&#xA;Фамилии Имени Отчества. &#xD;&#xA;Для получения ключа (64 бит) используют текст, состоящий из 8 букв. " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,94,0,0" Height="85" Width="497" Grid.Column="1"/>
+
+    </Grid>
+</Window>

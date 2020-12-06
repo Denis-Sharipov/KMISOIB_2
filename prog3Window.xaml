@@ -1,0 +1,51 @@
+﻿<Window x:Class="KMiSOIB.prog3Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KMiSOIB"
+        mc:Ignorable="d"
+        Title="Task3Window" Height="324.279" Width="807.175">
+    <Grid Margin="0,0,-211,-234" Background="#FFCFFFFB">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="443*"/>
+            <RowDefinition Height="84*"/>
+        </Grid.RowDefinitions>
+        <Label Content="p =" HorizontalAlignment="Left" Margin="384,81,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="pTB" HorizontalAlignment="Left" Height="23" Margin="418,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" Text="29" TextChanged="pTB_TextChanged"/>
+        <Label Content="q =" HorizontalAlignment="Left" Margin="465,80,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="qTB" HorizontalAlignment="Left" Height="23" Margin="490,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" Text="17"/>
+        <Label Content="n =" HorizontalAlignment="Left" Margin="89,190,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="nTB" HorizontalAlignment="Left" Height="23" Margin="118,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" IsReadOnly="True"/>
+        <Label Content="φ(n) = " HorizontalAlignment="Left" Margin="157,190,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="phiTB" HorizontalAlignment="Left" Height="23" Margin="204,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" IsReadOnly="True"/>
+        <Label Content="d = " HorizontalAlignment="Left" Margin="528,81,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="dTB" HorizontalAlignment="Left" Height="23" Margin="560,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" Text="25"/>
+        <Label Content="e = " HorizontalAlignment="Left" Margin="243,190,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="eTB" HorizontalAlignment="Left" Height="23" Margin="272,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" IsReadOnly="True"/>
+        <Label Content="Открытый ключ:" HorizontalAlignment="Left" Margin="89,220,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PublicKeyTB" HorizontalAlignment="Left" Height="23" Margin="192,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" IsReadOnly="True"/>
+        <Label Content="Закрытый ключ:" HorizontalAlignment="Left" Margin="89,246,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PrivateKeyTB" HorizontalAlignment="Left" Height="23" Margin="192,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="69" IsReadOnly="True"/>
+        <Label Content="Сообщение:" HorizontalAlignment="Left" Margin="384,44,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MessageTB" HorizontalAlignment="Left" Height="23" Margin="466,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" Text="ЕМН" TextChanged="MessageTB_TextChanged"/>
+        <Button x:Name="Proceed_Button" Content="Начать" HorizontalAlignment="Left" Margin="312,129,0,0" VerticalAlignment="Top" Width="75" Click="RraTB_Click" RenderTransformOrigin="0.053,1"/>
+        <Label Content="Зашифрованное сообщение:" HorizontalAlignment="Left" Margin="334,157,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="EncryptedTB" HorizontalAlignment="Left" Height="23" Margin="334,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" IsReadOnly="True"/>
+        <Label Content="Расшифрованное сообщение:" HorizontalAlignment="Left" Margin="334,218,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DecryptTB" HorizontalAlignment="Left" Height="23" Margin="334,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300" IsReadOnly="True"/>
+        <Label Content="Выполнение" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top"/>
+        <Label Content="&#x9;Задание №3. Алгоритм шифрования RSA. " HorizontalAlignment="Left" Margin="235,1,0,0" VerticalAlignment="Top" Height="41" Width="352"/>
+        <Label Content="Сгенерируйте открытый и закрытый ключи &#xD;&#xA;в алгоритме шифрования RSA, &#xD;&#xA;выбрав простые числа p и q из первой сотни. &#xD;&#xA;Зашифруйте сообщение, состоящее из ваших инициалов: ФИО. &#xD;&#xA;&#xD;&#xA;" HorizontalAlignment="Left" Margin="11,33,0,0" VerticalAlignment="Top" Width="362" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.208"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="1.325"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+    </Grid>
+</Window>
